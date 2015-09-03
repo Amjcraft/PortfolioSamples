@@ -1,0 +1,17 @@
+<script id="MetroTiles-Template" type="text/x-handlebars-template">
+ 
+{{#results}}
+<div class="tile-container">
+	<div class="metro-tile"><img src="/Devdivisionmetrotiles/{{LinkFilename}}" alt="{{Title}}" class="tile-image" /></div>
+		<div class="tile-hover-container">
+			<a href="{{LinkTo.Url}}" title="{{LinkTo.Description}}">
+				<h3 class="tile-title">{{Title}}</h3>
+				<div class="tile-info">{{Description}}</div>
+				<div class="tile-readmore"><span class="fa fa-arrow-circle-right"></span> </div>
+				<div class="trans-back"></div> 
+			</a>
+		</div>
+</div><!-- /.tile container -->      
+{{/results}}
+ 
+</script>

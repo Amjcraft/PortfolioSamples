@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Content Tile Styles
+   ========================================================================== */
+  
+/* ==========================================================================
+Widget Tile Styles
+========================================================================== */
+.content-tiles {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+}
+div.tile-container {
+	display:inline-block;
+    border: 1px solid rgba(0, 0, 0, .15);
+    position: relative;
+    overflow: hidden;
+	float:left;
+    margin:4px;
+}
+ 
+.content-tiles .tile-container a:hover, .content-tiles .tile-container a:active {
+    text-decoration:none;
+}
+ 
+.content-tiles .tile-container img.tile-image{
+    width: 100%;
+ 
+}
+
+/*  Changing from a desktop hover to Mobile :active  */
+.content-tiles .tile-container:hover > .tile-hover-container, .content-tiles .tile-container:active > .tile-hover-container {
+	margin-top:0px;
+}
+ 
+.content-tiles .tile-hover-container {
+	margin-top:75%;
+}
+
+/* Base Styles */
+ 
+.tile-hover-container {
+	position:absolute;
+	top:0;
+	width:100%;
+	margin-top:56%;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	color:#fff;
+	height:100%;
+}
+h3.tile-title {
+	padding:0px 10px;
+	margin-top: 10px;
+	display:block;
+	z-index: 20;
+	font-weight:normal;
+	font-size: 1.3em;
+	position:relative;
+    color:#fff;
+}
+.tile-hover-container div{
+	padding:10px 10px 0 10px;
+	font-size:0.923em;
+}
+ 
+.tile-hover-container a:hover {
+    cursor:pointer;
+}
+ 
+.tile-hover-container .tile-info {
+	position:relative;
+	font-size: 1.2em;
+	z-index:20;
+    color:#fff;
+}
+ 
+.tile-hover-container div.trans-back {
+	background: #332c2c;
+	opacity:.9;
+	z-index: 10;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	padding: 0px;
+    color:#fff;
+}
+div.tile-readmore {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	position:relative;
+	left: 0;
+	z-index: 20;
+	opacity:1;
+	padding:0px 15px;
+	font-size: 240%;
+	color:#fff;
+}
+@media (min-width: 400px) {
+	div.tile-container {
+		width: 220px;
+		height: 220px;
+	}
+}
+	 
+@media (max-width: 400px) {
+	.container.metro {
+		padding:0px;
+		margin:0px;
+	}
+	.content-tiles {
+		width: 100%;
+	 
+	}
+	div.tile-container {
+		margin-bottom:0px;
+		margin-top:0px;
+		height:100%;
+		overflow:hidden;
+		width:100%;	
+		background-color: #c8c8c7;
+	}
+	.metro-tile {
+		/*width: 125px;*/
+		width: 31.25%;
+		display:inline-block;
+		float:left;
+		position:relative;
+		text-align:center;
+		margin: 3px;
+	 
+	}
+	.content-tiles div.tile-container {
+		width: 100%;
+	}
+	.content-tiles .tile-hover-container {
+		/*width: 249px;*/
+		width: 62.25%;
+		padding: 10px;	
+		position:relative;
+		display:inline-block;
+		float:left;
+		margin-top: 0;
+		height:auto;	
+	 
+	}
+	.tile-info {
+		height: 0px;
+		visibility:hidden;
+	}
+	.trans-back {
+		visibility:hidden;
+		height:0px;
+	}
+	h3.tile-title {
+		/*width: 170px;*/
+		width: 71.89%;
+		position: relative;
+		float:left;
+		display:inline-block;	
+		padding: 0px;
+		margin:0px;
+		color: #332c2c;
+		font-size: 120%;
+	}
+	div.tile-readmore {
+		position:absolute;
+		display:inline-block;	
+		left: 80%;
+		top:100;
+		padding:0px;
+		margin:0px;
+		width:19.67%;
+		/*width: 49px;*/
+		padding: 0px 0px 0px 5px; 
+		font-size:140%;	
+		color: #332c2c;
+	}
+	.tile-hover-container div {
+		padding:0;
+	}
+}

@@ -1,0 +1,177 @@
+* ==================  ACCORDION ================== */
+ul.accordion {
+	border: 1px solid #C8C8C7;
+	border-radius: 5px;
+	list-style-position:outside;
+	padding: 0px;
+}
+ 
+ul.accordion > li {
+	border-top:1px solid #C8C8C7;
+	border-bottom:1px solid #C8C8C7;
+	position:relative;
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+ul.accordion > li h3.cat-name {
+	padding: 15px 15px;
+	margin:0px;
+	font-size:1.2em;
+	background: #DFDFDF;
+	font-weight:300;
+}
+ul.accordion > li h3.cat-name:before {
+	font-family: FontAwesome;
+	content: "\F0DA";
+	margin-right:10px;
+	font-variant: normal;  /* Reset parent style that can break glyph codes */
+	text-transform: none;
+	
+}
+ul.accordion > li h3.cat-name:focus, ul.accordion > li h3.cat-name:hover, ul.accordion > li h3.cat-name:active  {
+	background:#500000;
+	color:white;
+	cursor:pointer;
+}
+ul.accordion > li.accordion-active h3.cat-name {
+	background-color: #500000;
+	color:white;
+}
+ 
+ul.accordion > li.accordion-active h3.cat-name:before {
+	font-family: FontAwesome;
+	content: "\F0D7";
+	margin-right:10px;
+	font-variant: normal;  /* Reset parent style that can break glyph codes */
+	text-transform: none;
+	
+}
+ 
+ul.accordion > li > ul {
+	list-style-type:none;
+	list-style-position:inside;
+	margin:0px;
+	padding:0px;
+}
+ 
+ul.accordion > li > ul > li {
+	padding: 0px 10px 0px 10px;
+	border-bottom:1px solid #C8C8C7;
+}
+div.sub-accordion {
+	padding: 15px 25px;
+}
+ 
+div.btn-detail-toggle {
+	left:4px;
+}
+div.btn-detail-toggle:active {
+	background:#C8C8C7;
+}
+div.btn-detail-toggle:focus, div.btn-detail-toggle:hover {
+	background:#C8C8C7;
+	cursor:pointer;
+	border: 1px dotted #000;
+	padding:5px 9px 9px 9px;
+}
+div.btn-course-link {
+	left:4px;
+	border-left: 1px solid #C8C8C7;
+ 
+}
+ 
+div.btn-course-link:active {
+	background:#C8C8C7;
+}
+ 
+div.btn-course-link:focus, div.btn-course-link:hover {
+	background:#C8C8C7;
+	cursor:pointer;
+	border: 1px dotted #000;
+	padding:5px 9px 9px 9px;
+}
+div.btn-course-link a:link, div.btn-course-link a:hover {
+	text-decoration:none;
+}
+.course-padding {
+	padding: 6px 10px 10px 10px;
+	
+}
+div.course-details {
+	margin: 25px 0px 25px 15px;
+	margin-left: 15px;
+}
+div.table-icon-bar {
+	margin-bottom: 55px;
+}
+div.table-icon-bar span {
+	margin-right: 15px;
+}
+span.icon-bar-heading {
+	font-weight:bold;
+}
+span.delivery-b {
+	content:B;
+	height:12px;
+	width:12px;
+	font-size: 14px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+}
+ 
+ 
+.delivery-medthod .icon-dhs-fema, .delivery-medthod .icon-gi-bill, .delivery-medthod .icon-gsa, .grant-items .icon-online-learning, .grant-items .icon-blended-learning, .grant-items .icon-f2f-learning {
+    
+}
+ 
+.delivery-medthod > i, .grant-items > i {
+    display:none;
+    padding-right: 6px;
+    font-size: 16px;
+}
+ 
+.\33 > .icon-gi-bill {
+    display:inline-block;
+}
+ 
+.\31 > .icon-gsa, .\34 > .icon-gsa, .\35 > .icon-gsa, .\36 > .icon-gsa, .\37 > .icon-gsa, .\38 > .icon-gsa, .\39 > .icon-gsa, .\31\30 > .icon-gsa {
+    display:inline-block;
+}
+ 
+.\32 > .icon-dhs-fema, .\31\31 > .icon-dhs-fema, .\31\32 > .icon-dhs-fema, .\31\33 > .icon-dhs-fema {
+    display:inline-block;
+}
+ 
+/* Face 2 Face */
+.C > .icon-f2f-learning {
+    display:inline-block;
+}
+ 
+/* Online */
+.W > .icon-online-learning {
+    display:inline-block;
+}
+ 
+/* Blended */
+.A > .icon-blended {
+    display:inline-block;
+}
+ 
+ 
+ 
+ 
+/* Face 2 Face */
+.C > .icon-f2f-learning {
+    display:inline-block;
+}
+ 
+/* Online */
+.W > .icon-online-learning {
+    display:inline-block;
+}
+ 
+/* Blended */
+.A > .icon-blended {
+    display:inline-block;
+}

@@ -1,0 +1,13 @@
+<script>
+SP.SOD.executeFunc('sp.js', 'SP.ClientContext', onClientContextLoad);
+            
+function onClientContextLoad() {
+   
+	var url = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl,
+		clientContext = new SP.ClientContext(url),
+		portfolio = new PortfolioTiles(clientContext, "Page-Portfolio");
+	
+	portfolio.intPortfolioTiles();
+
+}
+</script>
